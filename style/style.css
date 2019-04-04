@@ -97,6 +97,13 @@
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
 }
+.mobile-menu,
+#menu {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .main-header-menu {
+  display: block;
+}
 .main-header-menu {
   list-style-type: none;
   display: flex;
@@ -1234,4 +1241,168 @@
 }
 .main-footer-copyright .design h6:last-child {
   border-right: none;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main-header .main-header-section .main-header-menu {
+    order: 2;
+  }
+  .main-header-logo {
+    margin: 10px 60px 15px 15px;
+    width: 131px;
+    height: 40px;
+  }
+  .main-header-logo .logo-txt {
+    font-size: 25px;
+  }
+  .main-header-search {
+    margin: 18px;
+    display: flex;
+    height: 30px;
+  }
+  .main-header-search a:last-child {
+    margin-left: 5px;
+  }
+  .mobile-menu {
+    margin: 18px 0 0 60px;
+    display: block;
+  }
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8;
+    border-top: 5px solid #f8f8f8;
+    content: "";
+    height: 5px;
+    width: 20px;
+    padding-right: 15px;
+    float: right;
+  }
+  .main-header-menu {
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
+  .main-header-menu li {
+    width: 300px;
+    text-align: center;
+    margin: 4px;
+  }
+  .main-content-section-services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content-section-services article {
+    margin: 20px 10px;
+  }
+  .main-content-section-realization p {
+    width: 80%;
+    height: auto;
+  }
+  .main-content-section-realization .position-screen img:nth-child(1),
+  .main-content-section-realization .position-screen img:nth-child(3) {
+    display: none;
+  }
+  .main-content-section-purchasenow {
+    flex-direction: column;
+  }
+  .main-content-section-purchasenow h2 {
+    text-align: center;
+  }
+  .main-content-section-purchasenow p {
+    text-align: center;
+  }
+  .main-content-section-purchasenow button {
+    margin: 15px;
+  }
+  .main-content-section-latestprojects .latestprojects-main-p {
+    width: 80%;
+    height: auto;
+  }
+  .main-content-section-latestprojects .list-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-content-section-latestprojects article:nth-child(2n) {
+    display: none;
+  }
+  .main-content-section-video:before {
+    opacity: 0;
+  }
+  .main-content-section-video video {
+    width: 100%;
+    height: 100%;
+    background: none;
+  }
+  .main-content-section-video .video-play-btn {
+    top: 30%;
+    left: 40%;
+  }
+  .main-content-section-video .video-text {
+    display: none;
+  }
+  .main-content-section-excellentmobile {
+    flex-direction: column;
+  }
+  .main-content-section-excellentmobile img {
+    display: none;
+  }
+  .main-content-section-excellentmobile article {
+    margin: 20px;
+  }
+  .main-content-section-excellentmobile article span {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .main-content-section-excellentmobile article p {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .main-content-section-excellentmobile article ul {
+    margin: 20px auto;
+  }
+  .main-content-section-counters {
+    display: none;
+  }
+  .main-content-section-recentsposts {
+    flex-direction: column;
+  }
+  .main-content-section-recentsposts h1 {
+    text-align: center;
+  }
+  .main-content-section-recentsposts .recentsposts-main-p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .main-content-section-recentsposts article:nth-child(2n+1) {
+    display: none;
+  }
+  .main-content-section-partners img:nth-child(n+2) {
+    display: none;
+  }
+  .main-header-slider,
+  .main-header-slider-point {
+    display: none;
+  }
+  .main-footer article:nth-child(n+2) {
+    display: none;
+  }
+  .main-footer .main-footer-copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-footer .main-footer-copyright .links,
+  .main-footer .main-footer-copyright .design {
+    margin: 15px 0;
+  }
 }
